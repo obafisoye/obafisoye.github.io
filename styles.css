@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #161A30;
+    color: #040D12;
+    font-weight: 600;
+    background-image: url(images/margiela.jpeg);
+}
+
+nav {
+    background-color: #092635;
+    color: #B6BBC4;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #B6BBC4;
+    font-weight: bold;
+    font-family: 'Roboto Slab';
+}
+
+section {
+    padding: 20px;
+}
+
+#home {
+    flex: 1;
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#about{
+    flex: 1;
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#skills{
+    flex: 1;
+    text-align: center;
+}
+
+#icons{
+    flex: 1;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 600px;
+    text-align: center;
+}
+
+i{
+    font-size: 150px;
+}
+
+form, #contact {
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #1B4242;
+    color: #B6BBC4;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
+
+.error {
+	color: red;
+}
+
+footer {
+    background-color: #092635;
+    color: #B6BBC4;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    #home {
+        flex: 1;
+        margin: 0 auto;
+        width: 600px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #about{
+        flex: 1;
+        margin: 0 auto;
+        width: 600px;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    #home {
+        flex: 1;
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #about{
+        flex: 1;
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+        font-size: 15px;
+    }
+}

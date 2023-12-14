@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="contact.js"></script>
+    <title>Contact Information</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section validate form -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactform">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"/>
+            <p class="contactError error" id="name_error">* Required field</p>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"/>
+            <small>Format: 1234567890</small>
+            <p class="contactError error" id="phone_error">* Required field</p>
+            <p class="contactError error" id="phoneformat_error">* Invalid phone number</p>
+    
+            <label for="email">Email</label>
+            <input id="email" name="email" type="text" />
+            <p class="contactError error" id="email_error">* Required field</p>
+            <p class="contactError error" id="emailformat_error">
+                * Invalid email address
+            </p>
+    
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            <p class="contactError error" id="comments_error">* Required field</p>
+    
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset" id="reset">Reset</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2023 Obafisoye Daniel. Final Project.</p>
+    </footer>
+
+</body>
+</html>
